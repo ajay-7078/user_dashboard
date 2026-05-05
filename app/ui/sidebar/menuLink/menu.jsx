@@ -1,10 +1,18 @@
 import { memo } from 'react';
+import Link from "next/link";
+import Style from "./menuLInk.module.css";
 
 const MenuLInk = () => {
   return (
     <div>
-      <h2>menuLInk</h2>
+      
+      <Link href={item.path } className={Style.containor}>
+      {item.icon}
+      {item.title}
+
+      </Link>
     </div>
+
   );
 };
 
