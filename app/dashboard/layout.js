@@ -1,14 +1,18 @@
 import Sidebar from "../ui/sidebar/sidebar";
+import Navbar from "../ui/navbar/navbar";
 import { memo } from "react";
 import styles from "../ui/dashboard/dashboard.module.css";
 
+
 const DashboardLayout = ({ children }) => {
   return (
-
     <div className={styles.container}>
-      <Sidebar/>
       <div className={styles.menu}>
-        {children}
+        <Sidebar />
+      </div>
+      <div className={styles.content}>
+        <Navbar />
+        <main className={styles.dashboardContent}>{children}</main>
       </div>
     </div>
   );

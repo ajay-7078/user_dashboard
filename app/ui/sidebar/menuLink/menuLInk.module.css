@@ -6,6 +6,6 @@
     margin: 5px 0;
     border-radius: 10px;
 }
-.containor:hover,.active{
+.container:hover,.active{
     background-color:#2e374a;
 }
