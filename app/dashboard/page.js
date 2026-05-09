@@ -1,11 +1,8 @@
-'use client';
-
 import { memo } from 'react';
-import styles from '../ui/dashboard/dashboard.module.css';
-import { MdTrendingUp, MdPeople, MdShoppingCart, MdAttachMoney } from 'react-icons/md';
+import Transactions from  '../ui/transactions/transactions';
 
 const DashboardPage = () => {
-  // const stats = [
+
   //   {
   //     title: 'Total Users',
   //     value: '12,543',
@@ -38,47 +35,9 @@ const DashboardPage = () => {
 
   return (
     <div>
-      
+      <Transactions />
     </div>
-    // <div className={styles.dashboardContent}>
-    //   <div className={styles.header}>
-    //     <h1>Dashboard</h1>
-    //     <p>Welcome back! Here's your performance overview.</p>
-    //   </div>
-
-    //   <div className={styles.statsGrid}>
-    //     {stats.map((stat, index) => (
-    //       <div key={index} className={styles.statCard}>
-    //         <div className={styles.statHeader}>
-    //           <div className={styles.statIcon} style={{ borderColor: stat.color }}>
-    //             <div style={{ color: stat.color, fontSize: '24px' }}>
-    //               {stat.icon}
-    //             </div>
-    //           </div>
-    //           <span className={styles.changeIndicator}>{stat.change}</span>
-    //         </div>
-    //         <h3 className={styles.statTitle}>{stat.title}</h3>
-    //         <p className={styles.statValue}>{stat.value}</p>
-    //       </div>
-    //     ))}
-    //   </div>
-
-    //   <div className={styles.chartsSection}>
-    //     <div className={styles.chartCard}>
-    //       <h2>Recent Activity</h2>
-    //       <div className={styles.placeholderChart}>
-    //         <p>Chart will be displayed here</p>
-    //       </div>
-    //     </div>
-
-    //     <div className={styles.chartCard}>
-    //       <h2>Top Products</h2>
-    //       <div className={styles.placeholderChart}>
-    //         <p>Chart will be displayed here</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+  
   );
 };
 

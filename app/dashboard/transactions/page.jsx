@@ -1,11 +1,11 @@
 import { memo } from 'react';
 
-const transaction = () => {
+const transactions = () => {
   return (
     <div>
-      <h2>transaction</h2>
+      <h2>transactions</h2>
     </div>
   );
 };
 
-export default memo(transaction);
+export default memo(transactions);

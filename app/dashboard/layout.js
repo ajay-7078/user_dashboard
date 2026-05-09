@@ -12,6 +12,7 @@ const DashboardLayout = ({ children }) => {
       </div>
       <div className={styles.content}>
         <Navbar />
+       
         <main className={styles.dashboardContent}>{children}</main>
       </div>
     </div>
